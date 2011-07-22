@@ -13,10 +13,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E45AA1B13D0D51B002788E8"
-               BuildableName = "AudioRecordingTest1.app"
-               BlueprintName = "AudioRecordingTest1"
-               ReferencedContainer = "container:AudioRecordingTest1.xcodeproj">
+               BlueprintIdentifier = "3E13501713D11FB3003C8ADF"
+               BuildableName = "AudioRecordingTest2.app"
+               BlueprintName = "AudioRecordingTest2"
+               ReferencedContainer = "container:AudioRecordingTest2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,10 +31,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E45AA3F13D0D51B002788E8"
-               BuildableName = "AudioRecordingTest1Tests.octest"
-               BlueprintName = "AudioRecordingTest1Tests"
-               ReferencedContainer = "container:AudioRecordingTest1.xcodeproj">
+               BlueprintIdentifier = "3E13503B13D11FB3003C8ADF"
+               BuildableName = "AudioRecordingTest2Tests.octest"
+               BlueprintName = "AudioRecordingTest2Tests"
+               ReferencedContainer = "container:AudioRecordingTest2.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -50,10 +50,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E45AA1B13D0D51B002788E8"
-            BuildableName = "AudioRecordingTest1.app"
-            BlueprintName = "AudioRecordingTest1"
-            ReferencedContainer = "container:AudioRecordingTest1.xcodeproj">
+            BlueprintIdentifier = "3E13501713D11FB3003C8ADF"
+            BuildableName = "AudioRecordingTest2.app"
+            BlueprintName = "AudioRecordingTest2"
+            ReferencedContainer = "container:AudioRecordingTest2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E45AA1B13D0D51B002788E8"
-            BuildableName = "AudioRecordingTest1.app"
-            BlueprintName = "AudioRecordingTest1"
-            ReferencedContainer = "container:AudioRecordingTest1.xcodeproj">
+            BlueprintIdentifier = "3E13501713D11FB3003C8ADF"
+            BuildableName = "AudioRecordingTest2.app"
+            BlueprintName = "AudioRecordingTest2"
+            ReferencedContainer = "container:AudioRecordingTest2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

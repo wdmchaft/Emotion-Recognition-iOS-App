@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AudioRecordingTest1.xcscheme</key>
+		<key>AudioRecordingTest2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3E45AA1B13D0D51B002788E8</key>
+		<key>3E13501713D11FB3003C8ADF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3E45AA3F13D0D51B002788E8</key>
+		<key>3E13503B13D11FB3003C8ADF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

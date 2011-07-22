@@ -1,27 +1,25 @@
 //
-//  AudioRecordingTest1AppDelegate.m
-//  AudioRecordingTest1
+//  AudioRecordingTest2AppDelegate.m
+//  AudioRecordingTest2
 //
 //  Created by Akash Krishnan on 7/15/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "AudioRecordingTest1AppDelegate.h"
+#import "AudioRecordingTest2AppDelegate.h"
 
-#import "AudioRecordingTest1ViewController.h"
-
-@implementation AudioRecordingTest1AppDelegate
+@implementation AudioRecordingTest2AppDelegate
 
 
 @synthesize window=_window;
 
-@synthesize viewController=_viewController;
+@synthesize navigationController=_navigationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-     
-    self.window.rootViewController = self.viewController;
+    // Add the navigation controller's view to the window and display.
+    self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -68,7 +66,7 @@
 - (void)dealloc
 {
     [_window release];
-    [_viewController release];
+    [_navigationController release];
     [super dealloc];
 }
 

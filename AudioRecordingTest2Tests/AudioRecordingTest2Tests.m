@@ -1,15 +1,15 @@
 //
-//  AudioRecordingTest1Tests.m
-//  AudioRecordingTest1Tests
+//  AudioRecordingTest2Tests.m
+//  AudioRecordingTest2Tests
 //
 //  Created by Akash Krishnan on 7/15/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "AudioRecordingTest1Tests.h"
+#import "AudioRecordingTest2Tests.h"
 
 
-@implementation AudioRecordingTest1Tests
+@implementation AudioRecordingTest2Tests
 
 - (void)setUp
 {
@@ -27,7 +27,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in AudioRecordingTest1Tests");
+    STFail(@"Unit tests are not implemented yet in AudioRecordingTest2Tests");
 }
 
 @end
