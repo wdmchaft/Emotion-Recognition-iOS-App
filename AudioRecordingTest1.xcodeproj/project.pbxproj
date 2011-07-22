@@ -22,6 +22,7 @@
 		3E45AA4B13D0D51B002788E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E45AA4913D0D51B002788E8 /* InfoPlist.strings */; };
 		3E45AA4E13D0D51B002788E8 /* AudioRecordingTest1Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3E45AA4D13D0D51B002788E8 /* AudioRecordingTest1Tests.h */; };
 		3E45AA5013D0D51B002788E8 /* AudioRecordingTest1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E45AA4F13D0D51B002788E8 /* AudioRecordingTest1Tests.m */; };
+		3E45AA5F13D103D8002788E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E45AA5E13D103D8002788E8 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +40,23 @@
 		3E45AA2013D0D51B002788E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3E45AA2213D0D51B002788E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3E45AA2413D0D51B002788E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3E45AA2813D0D51B002788E8 /* AudioRecordingTest1-Info.plist */ = {isa = PBXFileReference; path = "AudioRecordingTest1-Info.plist"; sourceTree = "<group>"; };
+		3E45AA2813D0D51B002788E8 /* AudioRecordingTest1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioRecordingTest1-Info.plist"; sourceTree = "<group>"; };
 		3E45AA2A13D0D51B002788E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3E45AA2C13D0D51B002788E8 /* AudioRecordingTest1-Prefix.pch */ = {isa = PBXFileReference; path = "AudioRecordingTest1-Prefix.pch"; sourceTree = "<group>"; };
+		3E45AA2C13D0D51B002788E8 /* AudioRecordingTest1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioRecordingTest1-Prefix.pch"; sourceTree = "<group>"; };
 		3E45AA2D13D0D51B002788E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3E45AA2F13D0D51B002788E8 /* AudioRecordingTest1AppDelegate.h */ = {isa = PBXFileReference; path = AudioRecordingTest1AppDelegate.h; sourceTree = "<group>"; };
+		3E45AA2F13D0D51B002788E8 /* AudioRecordingTest1AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioRecordingTest1AppDelegate.h; sourceTree = "<group>"; };
 		3E45AA3013D0D51B002788E8 /* AudioRecordingTest1AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioRecordingTest1AppDelegate.m; sourceTree = "<group>"; };
 		3E45AA3313D0D51B002788E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		3E45AA3513D0D51B002788E8 /* AudioRecordingTest1ViewController.h */ = {isa = PBXFileReference; path = AudioRecordingTest1ViewController.h; sourceTree = "<group>"; };
+		3E45AA3513D0D51B002788E8 /* AudioRecordingTest1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioRecordingTest1ViewController.h; sourceTree = "<group>"; };
 		3E45AA3613D0D51B002788E8 /* AudioRecordingTest1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioRecordingTest1ViewController.m; sourceTree = "<group>"; };
 		3E45AA3913D0D51B002788E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AudioRecordingTest1ViewController.xib; sourceTree = "<group>"; };
 		3E45AA4013D0D51B002788E8 /* AudioRecordingTest1Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioRecordingTest1Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E45AA4813D0D51B002788E8 /* AudioRecordingTest1Tests-Info.plist */ = {isa = PBXFileReference; path = "AudioRecordingTest1Tests-Info.plist"; sourceTree = "<group>"; };
+		3E45AA4813D0D51B002788E8 /* AudioRecordingTest1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioRecordingTest1Tests-Info.plist"; sourceTree = "<group>"; };
 		3E45AA4A13D0D51B002788E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3E45AA4C13D0D51B002788E8 /* AudioRecordingTest1Tests-Prefix.pch */ = {isa = PBXFileReference; path = "AudioRecordingTest1Tests-Prefix.pch"; sourceTree = "<group>"; };
+		3E45AA4C13D0D51B002788E8 /* AudioRecordingTest1Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioRecordingTest1Tests-Prefix.pch"; sourceTree = "<group>"; };
 		3E45AA4D13D0D51B002788E8 /* AudioRecordingTest1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioRecordingTest1Tests.h; sourceTree = "<group>"; };
 		3E45AA4F13D0D51B002788E8 /* AudioRecordingTest1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioRecordingTest1Tests.m; sourceTree = "<group>"; };
+		3E45AA5E13D103D8002788E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E45AA5F13D103D8002788E8 /* AVFoundation.framework in Frameworks */,
 				3E45AA2113D0D51B002788E8 /* UIKit.framework in Frameworks */,
 				3E45AA2313D0D51B002788E8 /* Foundation.framework in Frameworks */,
 				3E45AA2513D0D51B002788E8 /* CoreGraphics.framework in Frameworks */,
@@ -103,6 +106,7 @@
 		3E45AA1F13D0D51B002788E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E45AA5E13D103D8002788E8 /* AVFoundation.framework */,
 				3E45AA2013D0D51B002788E8 /* UIKit.framework */,
 				3E45AA2213D0D51B002788E8 /* Foundation.framework */,
 				3E45AA2413D0D51B002788E8 /* CoreGraphics.framework */,
