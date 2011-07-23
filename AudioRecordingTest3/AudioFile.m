@@ -25,7 +25,7 @@
 
 +(void)analyze:(NSURL *)fileURL username:(NSString *)username password:(NSString *)encPassword
 {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://aakay.net/EmotionRecognition/iOS/?r=f&u=%@&p=%@&l=%@", username, encPassword, @"Untitled+Audio+File", [[fileURL absoluteString] stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"]]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://aakay.net/EmotionRecognition/iOS/?r=f&u=%@&p=%@&l=%@", username, encPassword, [[fileURL absoluteString] stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"]]];
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     [request setPostFormat:ASIMultipartFormDataPostFormat];
     //[request setUploadProgressDelegate:theProgressView];
