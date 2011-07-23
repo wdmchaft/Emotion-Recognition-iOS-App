@@ -60,29 +60,7 @@
             ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
             [request startSynchronous];
             
-            // Update recorded files list
-            url = [NSURL URLWithString:[NSString stringWithFormat:@"http://aakay.net/EmotionRecognition/iOS/?r=rf&u=%@&p=%@", username, encPassword]];
-            
-            request = [ASIFormDataRequest requestWithURL:url];
-            [request startSynchronous];
-            NSError *error = [request error];
-            NSString *response = [request responseString];
-            NSArray *lines = [response componentsSeparatedByString:@"\n"];
-            [mobject removeAllObjects];
-            for(NSString *line in lines)
-            {
-                if(![line isEqualToString:@""])
-                {
-                    NSArray *items = [line componentsSeparatedByString:@"\t"];
-                    AudioFile *af = [[AudioFile alloc] init];
-                    af.filename = [items objectAtIndex:0];
-                    af.recordDate = [items objectAtIndex:1];
-                    af.fileURL = [NSURL URLWithString:[items objectAtIndex:2]];
-                    [mobject insertObject:af atIndex:0];
-                    [af release];
-                }
-            }
-            [self.tableView reloadData];
+            [self updateRecordedFilesList];
             
             // Send analyze file request
             UIAlertView *analyzeRecordedAudioAlertView = [[UIAlertView alloc] initWithTitle:@"Analyze Audio"
@@ -133,12 +111,7 @@
         {
             if(buttonIndex == 1)
             {
-                NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://aakay.net/EmotionRecognition/iOS/?r=f&u=%@&p=%@&l=%@", username, encPassword, @"Untitled+Audio+File", [[recordedAudioTmpFile absoluteString] stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"]]];
-                ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-                [request setPostFormat:ASIMultipartFormDataPostFormat];
-                //[request setUploadProgressDelegate:theProgressView];
-                [request setFile:[recordedAudioTmpFile relativePath] forKey:@"file"];
-                [request startAsynchronous];
+                [AudioFile analyze:recordedAudioTmpFile username:username password:encPassword];
             }
             break;
         }
@@ -217,27 +190,7 @@
                     [alert show];
                     [alert release];
                     
-                    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://aakay.net/EmotionRecognition/iOS/?r=rf&u=%@&p=%@", username, encPassword]];
-                    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-                    [request startSynchronous];
-                    NSError *error = [request error];
-                    NSString *response = [request responseString];
-                    NSArray *lines = [response componentsSeparatedByString:@"\n"];
-                    [mobject removeAllObjects];
-                    for(NSString *line in lines)
-                    {
-                        if(![line isEqualToString:@""])
-                        {
-                            NSArray *items = [line componentsSeparatedByString:@"\t"];
-                            AudioFile *af = [[AudioFile alloc] init];
-                            af.filename = [items objectAtIndex:0];
-                            af.recordDate = [items objectAtIndex:1];
-                            af.fileURL = [NSURL URLWithString:[items objectAtIndex:2]];
-                            [mobject insertObject:af atIndex:0];
-                            [af release];
-                        }
-                    }
-                    [self.tableView reloadData];
+                    [self updateRecordedFilesList];
                 }
                 else
                 {
@@ -360,6 +313,9 @@
     encPassword = nil;
     
 	self.navigationItem.title = @"Recorded Files";
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(checkForUpdates) userInfo:nil repeats:true];
+    [timer fire];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -382,14 +338,6 @@
 	[super viewDidDisappear:animated];
 }
 
-/*
- // Override to allow orientations other than the default portrait orientation.
- - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
- // Return YES for supported orientations.
- return (interfaceOrientation == UIInterfaceOrientationPortrait);
- }
- */
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -409,7 +357,6 @@
         cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    // Set up the cell...
     AudioFile *af = [mobject objectAtIndex:indexPath.row];
 	NSString *cellValue = [NSString stringWithFormat:@"%@ %@", af.recordDate, af.filename];
 	[cell.textLabel setText:cellValue];
@@ -417,55 +364,11 @@
     return cell;
 }
 
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete)
- {
- // Delete the row from the data source.
- [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
- }
- else if (editingStyle == UITableViewCellEditingStyleInsert)
- {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
- }   
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     AudioFile *af = [mobject objectAtIndex:indexPath.row];
     AudioFileDetailViewController *dvController = [[AudioFileDetailViewController alloc] initWithNibName:@"AudioFileDetailViewController" bundle:nil];
-    dvController.filename = af.filename;
-    dvController.recordDate = af.recordDate;
-    dvController.fileURL = af.fileURL;
-    dvController.error = recordAudioError;
+    dvController.af = af;
     [self.navigationController pushViewController:dvController animated:YES];
     [dvController release];
     dvController = nil;
@@ -502,6 +405,80 @@
 	[audioRecorder dealloc];
     audioRecorder = nil;
     recordAudioError = nil;
+}
+
+-(void)updateRecordedFilesList
+{
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://aakay.net/EmotionRecognition/iOS/?r=rf&u=%@&p=%@", username, encPassword]];
+    
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    [request startSynchronous];
+    NSError *error = [request error];
+    NSString *response = [request responseString];
+    NSArray *lines = [response componentsSeparatedByString:@"\n"];
+    [mobject removeAllObjects];
+    for(NSString *line in lines)
+    {
+        if(![line isEqualToString:@""] && ![line isEqualToString:@"0"])
+        {
+            NSArray *items = [line componentsSeparatedByString:@"\t"];
+            AudioFile *af = [[AudioFile alloc] init];
+            af.fid = [items objectAtIndex:0];
+            af.filename = [items objectAtIndex:1];
+            af.recordDate = [items objectAtIndex:2];
+            af.fileURL = [NSURL URLWithString:[items objectAtIndex:3]];
+            af.emotion = [items objectAtIndex:4];
+            af.angry = [items objectAtIndex:5];
+            af.fearful = [items objectAtIndex:6];
+            af.happy = [items objectAtIndex:7];
+            af.sad = [items objectAtIndex:8];
+            [mobject insertObject:af atIndex:0];
+            [af release];
+        }
+    }
+    [self.tableView reloadData];
+}
+
+-(void)checkForNewAlerts
+{
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://aakay.net/EmotionRecognition/iOS/?r=a&u=%@&p=%@", username, encPassword]];
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    [request startSynchronous];
+    NSError *error = [request error];
+    NSString *response = [request responseString];
+    
+    NSArray *lines = [response componentsSeparatedByString:@"\n"];
+    for(NSString *line in lines)
+    {
+        if(![line isEqualToString:@""] && ![line isEqualToString:@"0"])
+        {
+            NSArray *items = [line componentsSeparatedByString:@"\t"];
+            NSString *aid = [items objectAtIndex:0];
+            NSString *title = [items objectAtIndex:1];
+            NSString *msg = [items objectAtIndex:2];
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                            message:msg
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"Close"
+                                                  otherButtonTitles: nil];
+            [alert show];
+            [alert release];
+            
+            NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://aakay.net/EmotionRecognition/iOS/?r=ra&u=%@&p=%@&a=%@", username, encPassword, aid]];
+            ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+            [request startSynchronous];
+        }
+    }
+}
+
+-(void)checkForUpdates
+{
+    if(loggedIn)
+    {
+        [self updateRecordedFilesList];
+        [self checkForNewAlerts];
+    }
 }
 
 - (void)dealloc

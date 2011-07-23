@@ -34,7 +34,14 @@
 }
 
 @property (nonatomic, retain) UIBarButtonItem *recordAudioButton;
+@property (nonatomic, retain) NSString *username;
+@property (nonatomic, retain) NSString *nickname;
+@property (nonatomic, retain) NSString *encPassword;
+
 
 -(IBAction)recordAudioButtonPressed:(id)sender;
+-(void)updateRecordedFilesList;
+-(void)checkForNewAlerts;
+-(void)checkForUpdates;
 
 @end

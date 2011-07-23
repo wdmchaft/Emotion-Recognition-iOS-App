@@ -42,6 +42,7 @@
 		3EAF7CA813D543D100147E7C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAF7CA713D543D100147E7C /* MobileCoreServices.framework */; };
 		3EAF7CAA13D543EC00147E7C /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAF7CA913D543EC00147E7C /* libz.1.1.3.dylib */; };
 		3EAF7CB913D579BF00147E7C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAF7CB813D579BF00147E7C /* MBProgressHUD.m */; };
+		3EF2F57813D9135E00723D33 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 3EF2F57713D9135E00723D33 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		3EAF7CA913D543EC00147E7C /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		3EAF7CB713D579BF00147E7C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		3EAF7CB813D579BF00147E7C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3EF2F57713D9135E00723D33 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		3E3F03E713D2174A0027BB55 = {
 			isa = PBXGroup;
 			children = (
+				3EF2F57713D9135E00723D33 /* README */,
 				3EAF7CA913D543EC00147E7C /* libz.1.1.3.dylib */,
 				3EAF7CA713D543D100147E7C /* MobileCoreServices.framework */,
 				3EAF7CA513D543C000147E7C /* SystemConfiguration.framework */,
@@ -343,6 +346,7 @@
 				3E3F040A13D2174A0027BB55 /* MainWindow.xib in Resources */,
 				3E3F041013D2174A0027BB55 /* RootViewController.xib in Resources */,
 				3E3F044013D23CD80027BB55 /* AudioFileDetailViewController.xib in Resources */,
+				3EF2F57813D9135E00723D33 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +497,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioRecordingTest3/AudioRecordingTest3-Prefix.pch";
 				INFOPLIST_FILE = "AudioRecordingTest3/AudioRecordingTest3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -506,6 +511,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioRecordingTest3/AudioRecordingTest3-Prefix.pch";
 				INFOPLIST_FILE = "AudioRecordingTest3/AudioRecordingTest3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

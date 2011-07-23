@@ -7,24 +7,49 @@
 //
 
 #import "AudioFileDetailViewController.h"
-
+#import "AudioFile.h"
 
 @implementation AudioFileDetailViewController
 
 @synthesize filenameLabel;
 @synthesize recordDateLabel;
-@synthesize fileURLLabel;
-@synthesize filename;
-@synthesize recordDate;
-@synthesize fileURL;
+@synthesize emotionLabel;
+@synthesize angryLabel;
+@synthesize fearfulLabel;
+@synthesize happyLabel;
+@synthesize sadLabel;
+
+@synthesize af;
+
+@synthesize analyzeAudioFileButton;
+@synthesize submitCorrectionButton;
 @synthesize playAudioFileButton;
-@synthesize error;
+@synthesize deleteAudioFileButton;
+
+@synthesize rvc;
+
+-(IBAction)analyzeAudioFileButtonPressed:(id)sender
+{
+    [AudioFile analyze:af.fileURL username:rvc.username password:rvc.encPassword];
+    [analyzeAudioFileButton setEnabled:false];
+}
+
+-(IBAction)submitCorrectionButtonPressed:(id)sender
+{
+    
+}
 
 -(IBAction)playAudioFileButtonPressed:(id)sender
 {
-    AVAudioPlayer * avPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&error];
+    NSError *error = af.error;
+    AVAudioPlayer * avPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:af.fileURL error:&error];
 	[avPlayer prepareToPlay];
 	[avPlayer play];
+}
+
+-(IBAction)deleteAudioFileButtonPressed:(id)sender
+{
+    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -40,12 +65,17 @@
 {
     [filenameLabel release];
     [recordDateLabel release];
-    [fileURLLabel release];
-    [filename release];
-    [recordDate release];
-    [fileURL release];
-    [error release];
+    [emotionLabel release];
+    [angryLabel release];
+    [fearfulLabel release];
+    [happyLabel release];
+    [sadLabel release];
+    
+    [analyzeAudioFileButton release];
+    [submitCorrectionButton release];
     [playAudioFileButton release];
+    [deleteAudioFileButton release];
+     
     [super dealloc];
 }
 
@@ -63,9 +93,13 @@
 {
     [super viewDidLoad];
     
-    filenameLabel.text = [NSString stringWithFormat:@"Filename: %@", filename];
-    recordDateLabel.text = [NSString stringWithFormat:@"Recorded Date: %@", recordDate];
-    fileURLLabel.text = [NSString stringWithFormat:@"File URL: %@", [fileURL absoluteString]];
+    filenameLabel.text = [NSString stringWithFormat:@"Filename: %@", af.filename];
+    recordDateLabel.text = [NSString stringWithFormat:@"Recorded Date: %@", af.recordDate];
+    emotionLabel.text = [NSString stringWithFormat:@"Emotion: %@", af.emotion];
+    angryLabel.text = [NSString stringWithFormat:@"Angry: %@", af.angry];
+    fearfulLabel.text = [NSString stringWithFormat:@"Fearful: %@", af.fearful];
+    happyLabel.text = [NSString stringWithFormat:@"Happy: %@", af.happy];
+    sadLabel.text = [NSString stringWithFormat:@"Sad: %@", af.sad];
 }
 
 - (void)viewDidUnload

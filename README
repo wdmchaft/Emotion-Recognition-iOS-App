@@ -1,0 +1,8 @@
+===========
+UPDATE LOG
+===========
+
+[1.0.3 -> 1.0.4]
+-AudioFileDetailView has been modified to add greater functionality regarding audio files and displays emotion analysis results
+-System updated to refresh every 15 seconds to check for alerts and analysis results
+-Reorganized code to reduce lines of code and increase efficiency
