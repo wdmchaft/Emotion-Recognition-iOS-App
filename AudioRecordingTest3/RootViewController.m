@@ -94,6 +94,9 @@
                 [recordAudioSettings setValue:[NSNumber numberWithInt:kAudioFormatLinearPCM] forKey:AVFormatIDKey];
                 [recordAudioSettings setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey];
                 [recordAudioSettings setValue:[NSNumber numberWithInt:2] forKey:AVNumberOfChannelsKey];
+                [recordAudioSettings setValue:[NSNumber numberWithInt:8] forKey:AVLinearPCMBitDepthKey];
+                [recordAudioSettings setValue:[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsBigEndianKey];
+                [recordAudioSettings setValue:[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsFloatKey];
                 
                 recordedAudioTmpFile = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"%.0f.%@", [NSDate timeIntervalSinceReferenceDate] * 1000.0, @"caf"]]];
                 
@@ -314,7 +317,7 @@
     
 	self.navigationItem.title = @"Recorded Files";
     
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(checkForUpdates) userInfo:nil repeats:true];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(checkForUpdates) userInfo:nil repeats:true];
     [timer fire];
 }
 
@@ -369,6 +372,8 @@
     AudioFile *af = [mobject objectAtIndex:indexPath.row];
     AudioFileDetailViewController *dvController = [[AudioFileDetailViewController alloc] initWithNibName:@"AudioFileDetailViewController" bundle:nil];
     dvController.af = af;
+    dvController.username = username;
+    dvController.encPassword = encPassword;
     [self.navigationController pushViewController:dvController animated:YES];
     [dvController release];
     dvController = nil;
@@ -413,7 +418,6 @@
     
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     [request startSynchronous];
-    NSError *error = [request error];
     NSString *response = [request responseString];
     NSArray *lines = [response componentsSeparatedByString:@"\n"];
     [mobject removeAllObjects];
@@ -444,7 +448,6 @@
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://aakay.net/EmotionRecognition/iOS/?r=a&u=%@&p=%@", username, encPassword]];
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     [request startSynchronous];
-    NSError *error = [request error];
     NSString *response = [request responseString];
     
     NSArray *lines = [response componentsSeparatedByString:@"\n"];

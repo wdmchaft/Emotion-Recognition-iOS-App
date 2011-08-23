@@ -29,7 +29,8 @@
     IBOutlet UIButton *playAudioFileButton;
     IBOutlet UIButton *deleteAudioFileButton;
     
-    RootViewController *rvc;
+    NSString *username;
+    NSString *encPassword;
 }
 
 @property (nonatomic, retain) UILabel *filenameLabel;
@@ -47,7 +48,8 @@
 @property (nonatomic, retain) UIButton *playAudioFileButton;
 @property (nonatomic, retain) UIButton *deleteAudioFileButton;
 
-@property (nonatomic, retain) RootViewController *rvc;
+@property (nonatomic, retain) NSString *username;
+@property (nonatomic, retain) NSString *encPassword;
 
 -(IBAction)analyzeAudioFileButtonPressed:(id)sender;
 -(IBAction)submitCorrectionButtonPressed:(id)sender;
