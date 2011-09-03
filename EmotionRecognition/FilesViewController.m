@@ -1,22 +1,25 @@
 //
-//  FilesRootViewController.m
+//  FilesViewController.m
 //  EmotionRecognition
 //
 //  Created by Akash Krishnan on 7/16/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "FilesRootViewController.h"
+#import "FilesViewController.h"
 #import "AudioFile.h"
 #import "AudioFileDetailViewController.h"
 #import "OCPromptView.h"
 #import "OCPasswordPromptView.h"
 #import "ASIFormDataRequest.h"
 
-@implementation FilesRootViewController
+@implementation FilesViewController
 
-@synthesize recordNavBar;
 @synthesize recordAudioButton;
+@synthesize recordNavigationController;
+@synthesize username;
+@synthesize nickname;
+@synthesize encPassword;
 
 -(IBAction)recordAudioButtonPressed:(id)sender
 {
@@ -50,8 +53,8 @@
             // Stop recording now
             
             recordAudioToggle = false;
-            [recordAudioButton setTitle:@" Record Audio" forState:UIControlStateNormal];
-            [recordNavBar setTitle:@"Recorded Files"];
+            [recordAudioButton setTitle:@" Record" forState:UIControlStateNormal];
+            [recordNavigationController.navigationItem setTitle:@"Record Audio"];
             [recordAudioActivitySpinner stopAnimating];
             
             [audioRecorder stop];
@@ -87,17 +90,19 @@
                 // start recording audio now
                 
                 recordAudioToggle = true;
-                [recordAudioButton setTitle:@" Stop Recording" forState:UIControlStateNormal];
-                [recordNavBar setTitle:@"Recording Audio..."];
+                [recordAudioButton setTitle:@" Stop" forState:UIControlStateNormal];
+                [recordNavigationController.navigationItem setTitle:@"Recording Audio..."];
                 [recordAudioActivitySpinner startAnimating];
                 
                 NSMutableDictionary *recordAudioSettings = [[NSMutableDictionary alloc] init];
                 [recordAudioSettings setValue:[NSNumber numberWithInt:kAudioFormatLinearPCM] forKey:AVFormatIDKey];
-                [recordAudioSettings setValue:[NSNumber numberWithFloat:44100.0f] forKey:AVSampleRateKey];
+                [recordAudioSettings setValue:[NSNumber numberWithFloat:44100.0] forKey:AVSampleRateKey];
                 [recordAudioSettings setValue:[NSNumber numberWithInt:2] forKey:AVNumberOfChannelsKey];
-                [recordAudioSettings setValue:[NSNumber numberWithInt:16] forKey:AVLinearPCMBitDepthKey];
+                [recordAudioSettings setValue:[NSNumber numberWithInt:8] forKey:AVLinearPCMBitDepthKey];
+                [recordAudioSettings setValue:[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsBigEndianKey];
+                [recordAudioSettings setValue:[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsFloatKey];
                 
-                recordedAudioTmpFile = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"%.0f.%@", [NSDate timeIntervalSinceReferenceDate] * 1000.0, @"wav"]]];
+                recordedAudioTmpFile = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"%.0f.%@", [NSDate timeIntervalSinceReferenceDate] * 1000.0, @"caf"]]];
                 
                 audioRecorder = [[AVAudioRecorder alloc] initWithURL:recordedAudioTmpFile settings:recordAudioSettings error:&recordAudioError];
                 [audioRecorder setDelegate:self];
@@ -298,7 +303,7 @@
     recordAudioActivitySpinner = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     [recordAudioActivitySpinner setHidesWhenStopped:true];
     recordAudioActivityButton = [[UIBarButtonItem alloc] initWithCustomView:recordAudioActivitySpinner];
-    self.navigationItem.leftBarButtonItem = recordAudioActivityButton;
+    recordNavigationController.navigationItem.leftBarButtonItem = recordAudioActivityButton;
     [recordAudioActivityButton release];
     
     AVAudioSession *audioSession = [AVAudioSession sharedInstance];
@@ -314,7 +319,7 @@
     
 	self.navigationItem.title = @"Recorded Files";
     
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(checkForUpdates) userInfo:nil repeats:true];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(checkForUpdates) userInfo:nil repeats:true];
     [timer fire];
 }
 
@@ -369,6 +374,8 @@
     AudioFile *af = [mobject objectAtIndex:indexPath.row];
     AudioFileDetailViewController *dvController = [[AudioFileDetailViewController alloc] initWithNibName:@"AudioFileDetailViewController" bundle:nil];
     dvController.af = af;
+    dvController.username = username;
+    dvController.encPassword = encPassword;
     [self.navigationController pushViewController:dvController animated:YES];
     [dvController release];
     dvController = nil;
@@ -413,7 +420,6 @@
     
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     [request startSynchronous];
-    NSError *error = [request error];
     NSString *response = [request responseString];
     NSArray *lines = [response componentsSeparatedByString:@"\n"];
     [mobject removeAllObjects];
@@ -444,7 +450,6 @@
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://aakay.net/EmotionRecognition/iOS/?r=a&u=%@&p=%@", username, encPassword]];
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     [request startSynchronous];
-    NSError *error = [request error];
     NSString *response = [request responseString];
     
     NSArray *lines = [response componentsSeparatedByString:@"\n"];
@@ -484,6 +489,10 @@
 - (void)dealloc
 {
     [recordAudioButton release];
+    [recordNavigationController release];
+    [username release];
+    [nickname release];
+    [encPassword release];
     [super dealloc];
 }
 

@@ -7,320 +7,344 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3ECE716F13E24A7300AC26B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECE716E13E24A7300AC26B2 /* UIKit.framework */; };
-		3ECE717113E24A7300AC26B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECE717013E24A7300AC26B2 /* Foundation.framework */; };
-		3ECE717313E24A7300AC26B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECE717213E24A7300AC26B2 /* CoreGraphics.framework */; };
-		3ECE717913E24A7300AC26B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE717713E24A7300AC26B2 /* InfoPlist.strings */; };
-		3ECE717B13E24A7300AC26B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE717A13E24A7300AC26B2 /* main.m */; };
-		3ECE717F13E24A7300AC26B2 /* EmotionRecognitionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE717E13E24A7300AC26B2 /* EmotionRecognitionAppDelegate.m */; };
-		3ECE718213E24A7300AC26B2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE718013E24A7300AC26B2 /* MainWindow.xib */; };
-		3ECE719613E24A7300AC26B2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECE719513E24A7300AC26B2 /* SenTestingKit.framework */; };
-		3ECE719713E24A7300AC26B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECE716E13E24A7300AC26B2 /* UIKit.framework */; };
-		3ECE719813E24A7300AC26B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECE717013E24A7300AC26B2 /* Foundation.framework */; };
-		3ECE719913E24A7300AC26B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECE717213E24A7300AC26B2 /* CoreGraphics.framework */; };
-		3ECE71A113E24A7300AC26B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE719F13E24A7300AC26B2 /* InfoPlist.strings */; };
-		3ECE71A313E24A7300AC26B2 /* EmotionRecognitionTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE71A213E24A7300AC26B2 /* EmotionRecognitionTests.h */; };
-		3ECE71A513E24A7300AC26B2 /* EmotionRecognitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE71A413E24A7300AC26B2 /* EmotionRecognitionTests.m */; };
-		3ECE71C713E24BA300AC26B2 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE71C113E24BA300AC26B2 /* README */; };
-		3ECE71D713E24C7800AC26B2 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE71D213E24C7800AC26B2 /* news.png */; };
-		3ECE71D813E24C7800AC26B2 /* record.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE71D313E24C7800AC26B2 /* record.png */; };
-		3ECE71D913E24C7800AC26B2 /* files.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE71D413E24C7800AC26B2 /* files.png */; };
-		3ECE71DA13E24C7800AC26B2 /* social.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE71D513E24C7800AC26B2 /* social.png */; };
-		3ECE71DB13E24C7800AC26B2 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE71D613E24C7800AC26B2 /* settings.png */; };
-		3ECE71DE13E24C9700AC26B2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE71DD13E24C9700AC26B2 /* Reachability.m */; };
-		3ECE71F313E24CA700AC26B2 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE71E013E24CA700AC26B2 /* ASIAuthenticationDialog.m */; };
-		3ECE71F413E24CA700AC26B2 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE71E313E24CA700AC26B2 /* ASIDataCompressor.m */; };
-		3ECE71F513E24CA700AC26B2 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE71E513E24CA700AC26B2 /* ASIDataDecompressor.m */; };
-		3ECE71F613E24CA700AC26B2 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE71E713E24CA700AC26B2 /* ASIDownloadCache.m */; };
-		3ECE71F713E24CA700AC26B2 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE71E913E24CA700AC26B2 /* ASIFormDataRequest.m */; };
-		3ECE71F813E24CA700AC26B2 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE71EB13E24CA700AC26B2 /* ASIHTTPRequest.m */; };
-		3ECE71F913E24CA700AC26B2 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE71EF13E24CA700AC26B2 /* ASIInputStream.m */; };
-		3ECE71FA13E24CA700AC26B2 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE71F113E24CA700AC26B2 /* ASINetworkQueue.m */; };
-		3ECE71FF13E24CBD00AC26B2 /* OCPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE71FC13E24CBD00AC26B2 /* OCPromptView.m */; };
-		3ECE720013E24CBD00AC26B2 /* OCPasswordPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE71FE13E24CBD00AC26B2 /* OCPasswordPromptView.m */; };
-		3ECE720713E24CD400AC26B2 /* FilesRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE720213E24CD400AC26B2 /* FilesRootViewController.m */; };
-		3ECE720813E24CD400AC26B2 /* FilesRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE720313E24CD400AC26B2 /* FilesRootViewController.xib */; };
-		3ECE720913E24CD400AC26B2 /* AudioFileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE720513E24CD400AC26B2 /* AudioFileDetailViewController.m */; };
-		3ECE720A13E24CD400AC26B2 /* AudioFileDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECE720613E24CD400AC26B2 /* AudioFileDetailViewController.xib */; };
-		3ECE720D13E24CE400AC26B2 /* AudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE720C13E24CE400AC26B2 /* AudioFile.m */; };
-		3ECE720F13E2500600AC26B2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECE720E13E2500600AC26B2 /* AVFoundation.framework */; };
-		3ECE721113E2500D00AC26B2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECE721013E2500D00AC26B2 /* CFNetwork.framework */; };
-		3ECE721313E2501800AC26B2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECE721213E2501800AC26B2 /* MobileCoreServices.framework */; };
-		3ECE721513E2503C00AC26B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECE721413E2503C00AC26B2 /* SystemConfiguration.framework */; };
-		3ECE721713E2505E00AC26B2 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECE721613E2505E00AC26B2 /* libz.1.2.3.dylib */; };
+		3E0559EF1411FF5D0067E518 /* FilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0559EE1411FF5D0067E518 /* FilesViewController.m */; };
+		3E0559F6141200EF0067E518 /* FilesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0559F5141200EF0067E518 /* FilesViewController.xib */; };
+		3E413F5E1405E22900E27FFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E413F5D1405E22900E27FFD /* UIKit.framework */; };
+		3E413F601405E22900E27FFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E413F5F1405E22900E27FFD /* Foundation.framework */; };
+		3E413F621405E22900E27FFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E413F611405E22900E27FFD /* CoreGraphics.framework */; };
+		3E413F681405E22900E27FFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E413F661405E22900E27FFD /* InfoPlist.strings */; };
+		3E413F6A1405E22A00E27FFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E413F691405E22A00E27FFD /* main.m */; };
+		3E413F6E1405E22A00E27FFD /* EmotionRecognitionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E413F6D1405E22A00E27FFD /* EmotionRecognitionAppDelegate.m */; };
+		3E413F711405E22A00E27FFD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E413F6F1405E22A00E27FFD /* MainWindow.xib */; };
+		3EAFC43C1411F10E00A11D1B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAFC43B1411F10E00A11D1B /* AVFoundation.framework */; };
+		3EAFC43F1411F15600A11D1B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAFC43E1411F15600A11D1B /* CFNetwork.framework */; };
+		3EAFC4411411F19500A11D1B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAFC4401411F19500A11D1B /* SystemConfiguration.framework */; };
+		3EAFC4431411F1A400A11D1B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAFC4421411F1A400A11D1B /* MobileCoreServices.framework */; };
+		3EAFC4451411F1B000A11D1B /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAFC4441411F1B000A11D1B /* libz.1.1.3.dylib */; };
+		3EAFC4481411F44300A11D1B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC4471411F44200A11D1B /* README */; };
+		3EAFC4621411F6D000A11D1B /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC44C1411F6D000A11D1B /* ASIAuthenticationDialog.m */; };
+		3EAFC4631411F6D000A11D1B /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC44F1411F6D000A11D1B /* ASIDataCompressor.m */; };
+		3EAFC4641411F6D000A11D1B /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC4511411F6D000A11D1B /* ASIDataDecompressor.m */; };
+		3EAFC4651411F6D000A11D1B /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC4531411F6D000A11D1B /* ASIDownloadCache.m */; };
+		3EAFC4661411F6D000A11D1B /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC4551411F6D000A11D1B /* ASIFormDataRequest.m */; };
+		3EAFC4671411F6D000A11D1B /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC4571411F6D000A11D1B /* ASIHTTPRequest.m */; };
+		3EAFC4681411F6D000A11D1B /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC45B1411F6D000A11D1B /* ASIInputStream.m */; };
+		3EAFC4691411F6D000A11D1B /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC45D1411F6D000A11D1B /* ASINetworkQueue.m */; };
+		3EAFC46A1411F6D000A11D1B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC4611411F6D000A11D1B /* Reachability.m */; };
+		3EAFC4701411F73300A11D1B /* OCPasswordPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC46D1411F73300A11D1B /* OCPasswordPromptView.m */; };
+		3EAFC4711411F73300A11D1B /* OCPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC46F1411F73300A11D1B /* OCPromptView.m */; };
+		3EAFC4781411F7C900A11D1B /* AudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC4741411F7C900A11D1B /* AudioFile.m */; };
+		3EAFC4791411F7C900A11D1B /* AudioFileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC4761411F7C900A11D1B /* AudioFileDetailViewController.m */; };
+		3EAFC47A1411F7C900A11D1B /* AudioFileDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC4771411F7C900A11D1B /* AudioFileDetailViewController.xib */; };
+		3EAFC4811411F86300A11D1B /* files.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC47C1411F86300A11D1B /* files.png */; };
+		3EAFC4821411F86300A11D1B /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC47D1411F86300A11D1B /* news.png */; };
+		3EAFC4831411F86300A11D1B /* record.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC47E1411F86300A11D1B /* record.png */; };
+		3EAFC4841411F86300A11D1B /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC47F1411F86300A11D1B /* settings.png */; };
+		3EAFC4851411F86300A11D1B /* social.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC4801411F86300A11D1B /* social.png */; };
+		3EAFC48A1411F9D100A11D1B /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC4881411F9D100A11D1B /* NewsViewController.m */; };
+		3EAFC48B1411F9D100A11D1B /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC4891411F9D100A11D1B /* NewsViewController.xib */; };
+		3EAFC4941411FB2800A11D1B /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC4921411FB2800A11D1B /* RecordViewController.m */; };
+		3EAFC4951411FB2800A11D1B /* RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC4931411FB2800A11D1B /* RecordViewController.xib */; };
+		3EAFC4991411FD0F00A11D1B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC4971411FD0F00A11D1B /* SettingsViewController.m */; };
+		3EAFC49A1411FD0F00A11D1B /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC4981411FD0F00A11D1B /* SettingsViewController.xib */; };
+		3EAFC49E1411FD2800A11D1B /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC49C1411FD2800A11D1B /* SocialViewController.m */; };
+		3EAFC49F1411FD2800A11D1B /* SocialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EAFC49D1411FD2800A11D1B /* SocialViewController.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3ECE719A13E24A7300AC26B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3ECE716113E24A7200AC26B2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3ECE716913E24A7300AC26B2;
-			remoteInfo = EmotionRecognition;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		3ECE716A13E24A7300AC26B2 /* EmotionRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ECE716E13E24A7300AC26B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		3ECE717013E24A7300AC26B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3ECE717213E24A7300AC26B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3ECE717613E24A7300AC26B2 /* EmotionRecognition-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EmotionRecognition-Info.plist"; sourceTree = "<group>"; };
-		3ECE717813E24A7300AC26B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3ECE717A13E24A7300AC26B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3ECE717C13E24A7300AC26B2 /* EmotionRecognition-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmotionRecognition-Prefix.pch"; sourceTree = "<group>"; };
-		3ECE717D13E24A7300AC26B2 /* EmotionRecognitionAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmotionRecognitionAppDelegate.h; sourceTree = "<group>"; };
-		3ECE717E13E24A7300AC26B2 /* EmotionRecognitionAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmotionRecognitionAppDelegate.m; sourceTree = "<group>"; };
-		3ECE718113E24A7300AC26B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		3ECE719413E24A7300AC26B2 /* EmotionRecognitionTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionRecognitionTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ECE719513E24A7300AC26B2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		3ECE719E13E24A7300AC26B2 /* EmotionRecognitionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EmotionRecognitionTests-Info.plist"; sourceTree = "<group>"; };
-		3ECE71A013E24A7300AC26B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3ECE71A213E24A7300AC26B2 /* EmotionRecognitionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmotionRecognitionTests.h; sourceTree = "<group>"; };
-		3ECE71A413E24A7300AC26B2 /* EmotionRecognitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmotionRecognitionTests.m; sourceTree = "<group>"; };
-		3ECE71C113E24BA300AC26B2 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = EmotionRecognition/README; sourceTree = "<group>"; };
-		3ECE71D213E24C7800AC26B2 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
-		3ECE71D313E24C7800AC26B2 /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
-		3ECE71D413E24C7800AC26B2 /* files.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = files.png; sourceTree = "<group>"; };
-		3ECE71D513E24C7800AC26B2 /* social.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = social.png; sourceTree = "<group>"; };
-		3ECE71D613E24C7800AC26B2 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
-		3ECE71DC13E24C9700AC26B2 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		3ECE71DD13E24C9700AC26B2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		3ECE71DF13E24CA700AC26B2 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
-		3ECE71E013E24CA700AC26B2 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
-		3ECE71E113E24CA700AC26B2 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
-		3ECE71E213E24CA700AC26B2 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
-		3ECE71E313E24CA700AC26B2 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
-		3ECE71E413E24CA700AC26B2 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
-		3ECE71E513E24CA700AC26B2 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
-		3ECE71E613E24CA700AC26B2 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
-		3ECE71E713E24CA700AC26B2 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
-		3ECE71E813E24CA700AC26B2 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
-		3ECE71E913E24CA700AC26B2 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
-		3ECE71EA13E24CA700AC26B2 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
-		3ECE71EB13E24CA700AC26B2 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
-		3ECE71EC13E24CA700AC26B2 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
-		3ECE71ED13E24CA700AC26B2 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
-		3ECE71EE13E24CA700AC26B2 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
-		3ECE71EF13E24CA700AC26B2 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
-		3ECE71F013E24CA700AC26B2 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
-		3ECE71F113E24CA700AC26B2 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
-		3ECE71F213E24CA700AC26B2 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
-		3ECE71FB13E24CBD00AC26B2 /* OCPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPromptView.h; sourceTree = "<group>"; };
-		3ECE71FC13E24CBD00AC26B2 /* OCPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPromptView.m; sourceTree = "<group>"; };
-		3ECE71FD13E24CBD00AC26B2 /* OCPasswordPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPasswordPromptView.h; sourceTree = "<group>"; };
-		3ECE71FE13E24CBD00AC26B2 /* OCPasswordPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPasswordPromptView.m; sourceTree = "<group>"; };
-		3ECE720113E24CD400AC26B2 /* FilesRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilesRootViewController.h; sourceTree = "<group>"; };
-		3ECE720213E24CD400AC26B2 /* FilesRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilesRootViewController.m; sourceTree = "<group>"; };
-		3ECE720313E24CD400AC26B2 /* FilesRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilesRootViewController.xib; sourceTree = "<group>"; };
-		3ECE720413E24CD400AC26B2 /* AudioFileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileDetailViewController.h; sourceTree = "<group>"; };
-		3ECE720513E24CD400AC26B2 /* AudioFileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileDetailViewController.m; sourceTree = "<group>"; };
-		3ECE720613E24CD400AC26B2 /* AudioFileDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioFileDetailViewController.xib; sourceTree = "<group>"; };
-		3ECE720B13E24CE400AC26B2 /* AudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFile.h; sourceTree = "<group>"; };
-		3ECE720C13E24CE400AC26B2 /* AudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFile.m; sourceTree = "<group>"; };
-		3ECE720E13E2500600AC26B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		3ECE721013E2500D00AC26B2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		3ECE721213E2501800AC26B2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		3ECE721413E2503C00AC26B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		3ECE721613E2505E00AC26B2 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		3E0559ED1411FF5D0067E518 /* FilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilesViewController.h; sourceTree = "<group>"; };
+		3E0559EE1411FF5D0067E518 /* FilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilesViewController.m; sourceTree = "<group>"; };
+		3E0559F5141200EF0067E518 /* FilesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilesViewController.xib; sourceTree = "<group>"; };
+		3E413F591405E22900E27FFD /* EmotionRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E413F5D1405E22900E27FFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3E413F5F1405E22900E27FFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3E413F611405E22900E27FFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3E413F651405E22900E27FFD /* EmotionRecognition-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EmotionRecognition-Info.plist"; sourceTree = "<group>"; };
+		3E413F671405E22900E27FFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3E413F691405E22A00E27FFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E413F6B1405E22A00E27FFD /* EmotionRecognition-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmotionRecognition-Prefix.pch"; sourceTree = "<group>"; };
+		3E413F6C1405E22A00E27FFD /* EmotionRecognitionAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmotionRecognitionAppDelegate.h; sourceTree = "<group>"; };
+		3E413F6D1405E22A00E27FFD /* EmotionRecognitionAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmotionRecognitionAppDelegate.m; sourceTree = "<group>"; };
+		3E413F701405E22A00E27FFD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		3EAFC43B1411F10E00A11D1B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3EAFC43E1411F15600A11D1B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3EAFC4401411F19500A11D1B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3EAFC4421411F1A400A11D1B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3EAFC4441411F1B000A11D1B /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		3EAFC4471411F44200A11D1B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		3EAFC44B1411F6D000A11D1B /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		3EAFC44C1411F6D000A11D1B /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		3EAFC44D1411F6D000A11D1B /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		3EAFC44E1411F6D000A11D1B /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		3EAFC44F1411F6D000A11D1B /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		3EAFC4501411F6D000A11D1B /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		3EAFC4511411F6D000A11D1B /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		3EAFC4521411F6D000A11D1B /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		3EAFC4531411F6D000A11D1B /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		3EAFC4541411F6D000A11D1B /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		3EAFC4551411F6D000A11D1B /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		3EAFC4561411F6D000A11D1B /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		3EAFC4571411F6D000A11D1B /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		3EAFC4581411F6D000A11D1B /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		3EAFC4591411F6D000A11D1B /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		3EAFC45A1411F6D000A11D1B /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		3EAFC45B1411F6D000A11D1B /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		3EAFC45C1411F6D000A11D1B /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		3EAFC45D1411F6D000A11D1B /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		3EAFC45E1411F6D000A11D1B /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		3EAFC4601411F6D000A11D1B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3EAFC4611411F6D000A11D1B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3EAFC46C1411F73300A11D1B /* OCPasswordPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPasswordPromptView.h; sourceTree = "<group>"; };
+		3EAFC46D1411F73300A11D1B /* OCPasswordPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPasswordPromptView.m; sourceTree = "<group>"; };
+		3EAFC46E1411F73300A11D1B /* OCPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPromptView.h; sourceTree = "<group>"; };
+		3EAFC46F1411F73300A11D1B /* OCPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPromptView.m; sourceTree = "<group>"; };
+		3EAFC4731411F7C900A11D1B /* AudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFile.h; sourceTree = "<group>"; };
+		3EAFC4741411F7C900A11D1B /* AudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFile.m; sourceTree = "<group>"; };
+		3EAFC4751411F7C900A11D1B /* AudioFileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileDetailViewController.h; sourceTree = "<group>"; };
+		3EAFC4761411F7C900A11D1B /* AudioFileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileDetailViewController.m; sourceTree = "<group>"; };
+		3EAFC4771411F7C900A11D1B /* AudioFileDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioFileDetailViewController.xib; sourceTree = "<group>"; };
+		3EAFC47C1411F86300A11D1B /* files.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = files.png; sourceTree = "<group>"; };
+		3EAFC47D1411F86300A11D1B /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
+		3EAFC47E1411F86300A11D1B /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
+		3EAFC47F1411F86300A11D1B /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		3EAFC4801411F86300A11D1B /* social.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = social.png; sourceTree = "<group>"; };
+		3EAFC4871411F9D100A11D1B /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		3EAFC4881411F9D100A11D1B /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		3EAFC4891411F9D100A11D1B /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		3EAFC4911411FB2800A11D1B /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		3EAFC4921411FB2800A11D1B /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		3EAFC4931411FB2800A11D1B /* RecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordViewController.xib; sourceTree = "<group>"; };
+		3EAFC4961411FD0F00A11D1B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		3EAFC4971411FD0F00A11D1B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		3EAFC4981411FD0F00A11D1B /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		3EAFC49B1411FD2800A11D1B /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		3EAFC49C1411FD2800A11D1B /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		3EAFC49D1411FD2800A11D1B /* SocialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3ECE716713E24A7300AC26B2 /* Frameworks */ = {
+		3E413F561405E22900E27FFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ECE721713E2505E00AC26B2 /* libz.1.2.3.dylib in Frameworks */,
-				3ECE721513E2503C00AC26B2 /* SystemConfiguration.framework in Frameworks */,
-				3ECE721313E2501800AC26B2 /* MobileCoreServices.framework in Frameworks */,
-				3ECE721113E2500D00AC26B2 /* CFNetwork.framework in Frameworks */,
-				3ECE720F13E2500600AC26B2 /* AVFoundation.framework in Frameworks */,
-				3ECE716F13E24A7300AC26B2 /* UIKit.framework in Frameworks */,
-				3ECE717113E24A7300AC26B2 /* Foundation.framework in Frameworks */,
-				3ECE717313E24A7300AC26B2 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3ECE719013E24A7300AC26B2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3ECE719613E24A7300AC26B2 /* SenTestingKit.framework in Frameworks */,
-				3ECE719713E24A7300AC26B2 /* UIKit.framework in Frameworks */,
-				3ECE719813E24A7300AC26B2 /* Foundation.framework in Frameworks */,
-				3ECE719913E24A7300AC26B2 /* CoreGraphics.framework in Frameworks */,
+				3EAFC4451411F1B000A11D1B /* libz.1.1.3.dylib in Frameworks */,
+				3EAFC43C1411F10E00A11D1B /* AVFoundation.framework in Frameworks */,
+				3EAFC43F1411F15600A11D1B /* CFNetwork.framework in Frameworks */,
+				3E413F621405E22900E27FFD /* CoreGraphics.framework in Frameworks */,
+				3E413F601405E22900E27FFD /* Foundation.framework in Frameworks */,
+				3EAFC4431411F1A400A11D1B /* MobileCoreServices.framework in Frameworks */,
+				3EAFC4411411F19500A11D1B /* SystemConfiguration.framework in Frameworks */,
+				3E413F5E1405E22900E27FFD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3ECE715F13E24A7200AC26B2 = {
+		3E413F4E1405E22900E27FFD = {
 			isa = PBXGroup;
 			children = (
-				3ECE71C113E24BA300AC26B2 /* README */,
-				3ECE721613E2505E00AC26B2 /* libz.1.2.3.dylib */,
-				3ECE721413E2503C00AC26B2 /* SystemConfiguration.framework */,
-				3ECE721213E2501800AC26B2 /* MobileCoreServices.framework */,
-				3ECE721013E2500D00AC26B2 /* CFNetwork.framework */,
-				3ECE720E13E2500600AC26B2 /* AVFoundation.framework */,
-				3ECE717413E24A7300AC26B2 /* EmotionRecognition */,
-				3ECE719C13E24A7300AC26B2 /* EmotionRecognitionTests */,
-				3ECE716D13E24A7300AC26B2 /* Frameworks */,
-				3ECE716B13E24A7300AC26B2 /* Products */,
+				3EAFC4471411F44200A11D1B /* README */,
+				3E413F631405E22900E27FFD /* EmotionRecognition */,
+				3E413F5C1405E22900E27FFD /* Frameworks */,
+				3E413F5A1405E22900E27FFD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3ECE716B13E24A7300AC26B2 /* Products */ = {
+		3E413F5A1405E22900E27FFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3ECE716A13E24A7300AC26B2 /* EmotionRecognition.app */,
-				3ECE719413E24A7300AC26B2 /* EmotionRecognitionTests.octest */,
+				3E413F591405E22900E27FFD /* EmotionRecognition.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3ECE716D13E24A7300AC26B2 /* Frameworks */ = {
+		3E413F5C1405E22900E27FFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3ECE716E13E24A7300AC26B2 /* UIKit.framework */,
-				3ECE717013E24A7300AC26B2 /* Foundation.framework */,
-				3ECE717213E24A7300AC26B2 /* CoreGraphics.framework */,
-				3ECE719513E24A7300AC26B2 /* SenTestingKit.framework */,
+				3EAFC4441411F1B000A11D1B /* libz.1.1.3.dylib */,
+				3EAFC43B1411F10E00A11D1B /* AVFoundation.framework */,
+				3EAFC43E1411F15600A11D1B /* CFNetwork.framework */,
+				3E413F611405E22900E27FFD /* CoreGraphics.framework */,
+				3E413F5F1405E22900E27FFD /* Foundation.framework */,
+				3EAFC4421411F1A400A11D1B /* MobileCoreServices.framework */,
+				3EAFC4401411F19500A11D1B /* SystemConfiguration.framework */,
+				3E413F5D1405E22900E27FFD /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3ECE717413E24A7300AC26B2 /* EmotionRecognition */ = {
+		3E413F631405E22900E27FFD /* EmotionRecognition */ = {
 			isa = PBXGroup;
 			children = (
-				3ECE71D013E24C5A00AC26B2 /* ASIHTTP */,
-				3ECE71CF13E24C4800AC26B2 /* Text Prompts */,
-				3ECE71CE13E24C3C00AC26B2 /* Images */,
-				3ECE717D13E24A7300AC26B2 /* EmotionRecognitionAppDelegate.h */,
-				3ECE717E13E24A7300AC26B2 /* EmotionRecognitionAppDelegate.m */,
-				3ECE718013E24A7300AC26B2 /* MainWindow.xib */,
-				3ECE71CD13E24C2A00AC26B2 /* Files Tab */,
-				3ECE717513E24A7300AC26B2 /* Supporting Files */,
+				3EAFC48C1411FA1500A11D1B /* Tabs */,
+				3EAFC47B1411F83A00A11D1B /* Icons */,
+				3EAFC44A1411F6D000A11D1B /* ASI */,
+				3EAFC46B1411F73300A11D1B /* OCPrompt */,
+				3EAFC4721411F74300A11D1B /* AudioFile */,
+				3E413F6C1405E22A00E27FFD /* EmotionRecognitionAppDelegate.h */,
+				3E413F6D1405E22A00E27FFD /* EmotionRecognitionAppDelegate.m */,
+				3E413F6F1405E22A00E27FFD /* MainWindow.xib */,
+				3E413F641405E22900E27FFD /* Supporting Files */,
 			);
 			path = EmotionRecognition;
 			sourceTree = "<group>";
 		};
-		3ECE717513E24A7300AC26B2 /* Supporting Files */ = {
+		3E413F641405E22900E27FFD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3ECE717613E24A7300AC26B2 /* EmotionRecognition-Info.plist */,
-				3ECE717713E24A7300AC26B2 /* InfoPlist.strings */,
-				3ECE717A13E24A7300AC26B2 /* main.m */,
-				3ECE717C13E24A7300AC26B2 /* EmotionRecognition-Prefix.pch */,
+				3E413F651405E22900E27FFD /* EmotionRecognition-Info.plist */,
+				3E413F661405E22900E27FFD /* InfoPlist.strings */,
+				3E413F691405E22A00E27FFD /* main.m */,
+				3E413F6B1405E22A00E27FFD /* EmotionRecognition-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3ECE719C13E24A7300AC26B2 /* EmotionRecognitionTests */ = {
+		3EAFC44A1411F6D000A11D1B /* ASI */ = {
 			isa = PBXGroup;
 			children = (
-				3ECE71A213E24A7300AC26B2 /* EmotionRecognitionTests.h */,
-				3ECE71A413E24A7300AC26B2 /* EmotionRecognitionTests.m */,
-				3ECE719D13E24A7300AC26B2 /* Supporting Files */,
+				3EAFC44B1411F6D000A11D1B /* ASIAuthenticationDialog.h */,
+				3EAFC44C1411F6D000A11D1B /* ASIAuthenticationDialog.m */,
+				3EAFC44D1411F6D000A11D1B /* ASICacheDelegate.h */,
+				3EAFC44E1411F6D000A11D1B /* ASIDataCompressor.h */,
+				3EAFC44F1411F6D000A11D1B /* ASIDataCompressor.m */,
+				3EAFC4501411F6D000A11D1B /* ASIDataDecompressor.h */,
+				3EAFC4511411F6D000A11D1B /* ASIDataDecompressor.m */,
+				3EAFC4521411F6D000A11D1B /* ASIDownloadCache.h */,
+				3EAFC4531411F6D000A11D1B /* ASIDownloadCache.m */,
+				3EAFC4541411F6D000A11D1B /* ASIFormDataRequest.h */,
+				3EAFC4551411F6D000A11D1B /* ASIFormDataRequest.m */,
+				3EAFC4561411F6D000A11D1B /* ASIHTTPRequest.h */,
+				3EAFC4571411F6D000A11D1B /* ASIHTTPRequest.m */,
+				3EAFC4581411F6D000A11D1B /* ASIHTTPRequestConfig.h */,
+				3EAFC4591411F6D000A11D1B /* ASIHTTPRequestDelegate.h */,
+				3EAFC45A1411F6D000A11D1B /* ASIInputStream.h */,
+				3EAFC45B1411F6D000A11D1B /* ASIInputStream.m */,
+				3EAFC45C1411F6D000A11D1B /* ASINetworkQueue.h */,
+				3EAFC45D1411F6D000A11D1B /* ASINetworkQueue.m */,
+				3EAFC45E1411F6D000A11D1B /* ASIProgressDelegate.h */,
+				3EAFC45F1411F6D000A11D1B /* Reachability */,
 			);
-			path = EmotionRecognitionTests;
+			path = ASI;
 			sourceTree = "<group>";
 		};
-		3ECE719D13E24A7300AC26B2 /* Supporting Files */ = {
+		3EAFC45F1411F6D000A11D1B /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				3ECE719E13E24A7300AC26B2 /* EmotionRecognitionTests-Info.plist */,
-				3ECE719F13E24A7300AC26B2 /* InfoPlist.strings */,
+				3EAFC4601411F6D000A11D1B /* Reachability.h */,
+				3EAFC4611411F6D000A11D1B /* Reachability.m */,
 			);
-			name = "Supporting Files";
+			path = Reachability;
 			sourceTree = "<group>";
 		};
-		3ECE71CD13E24C2A00AC26B2 /* Files Tab */ = {
+		3EAFC46B1411F73300A11D1B /* OCPrompt */ = {
 			isa = PBXGroup;
 			children = (
-				3ECE720113E24CD400AC26B2 /* FilesRootViewController.h */,
-				3ECE720213E24CD400AC26B2 /* FilesRootViewController.m */,
-				3ECE720313E24CD400AC26B2 /* FilesRootViewController.xib */,
-				3ECE720413E24CD400AC26B2 /* AudioFileDetailViewController.h */,
-				3ECE720513E24CD400AC26B2 /* AudioFileDetailViewController.m */,
-				3ECE720613E24CD400AC26B2 /* AudioFileDetailViewController.xib */,
-				3ECE720B13E24CE400AC26B2 /* AudioFile.h */,
-				3ECE720C13E24CE400AC26B2 /* AudioFile.m */,
+				3EAFC46C1411F73300A11D1B /* OCPasswordPromptView.h */,
+				3EAFC46D1411F73300A11D1B /* OCPasswordPromptView.m */,
+				3EAFC46E1411F73300A11D1B /* OCPromptView.h */,
+				3EAFC46F1411F73300A11D1B /* OCPromptView.m */,
 			);
-			name = "Files Tab";
+			path = OCPrompt;
 			sourceTree = "<group>";
 		};
-		3ECE71CE13E24C3C00AC26B2 /* Images */ = {
+		3EAFC4721411F74300A11D1B /* AudioFile */ = {
 			isa = PBXGroup;
 			children = (
-				3ECE71D213E24C7800AC26B2 /* news.png */,
-				3ECE71D313E24C7800AC26B2 /* record.png */,
-				3ECE71D413E24C7800AC26B2 /* files.png */,
-				3ECE71D513E24C7800AC26B2 /* social.png */,
-				3ECE71D613E24C7800AC26B2 /* settings.png */,
+				3EAFC4731411F7C900A11D1B /* AudioFile.h */,
+				3EAFC4741411F7C900A11D1B /* AudioFile.m */,
+				3EAFC4751411F7C900A11D1B /* AudioFileDetailViewController.h */,
+				3EAFC4761411F7C900A11D1B /* AudioFileDetailViewController.m */,
+				3EAFC4771411F7C900A11D1B /* AudioFileDetailViewController.xib */,
 			);
-			name = Images;
+			name = AudioFile;
 			sourceTree = "<group>";
 		};
-		3ECE71CF13E24C4800AC26B2 /* Text Prompts */ = {
+		3EAFC47B1411F83A00A11D1B /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				3ECE71FB13E24CBD00AC26B2 /* OCPromptView.h */,
-				3ECE71FC13E24CBD00AC26B2 /* OCPromptView.m */,
-				3ECE71FD13E24CBD00AC26B2 /* OCPasswordPromptView.h */,
-				3ECE71FE13E24CBD00AC26B2 /* OCPasswordPromptView.m */,
+				3EAFC47C1411F86300A11D1B /* files.png */,
+				3EAFC47D1411F86300A11D1B /* news.png */,
+				3EAFC47E1411F86300A11D1B /* record.png */,
+				3EAFC47F1411F86300A11D1B /* settings.png */,
+				3EAFC4801411F86300A11D1B /* social.png */,
 			);
-			name = "Text Prompts";
+			name = Icons;
 			sourceTree = "<group>";
 		};
-		3ECE71D013E24C5A00AC26B2 /* ASIHTTP */ = {
+		3EAFC4861411F8EE00A11D1B /* News */ = {
 			isa = PBXGroup;
 			children = (
-				3ECE71D113E24C6400AC26B2 /* Reachability */,
-				3ECE71DF13E24CA700AC26B2 /* ASIAuthenticationDialog.h */,
-				3ECE71E013E24CA700AC26B2 /* ASIAuthenticationDialog.m */,
-				3ECE71E113E24CA700AC26B2 /* ASICacheDelegate.h */,
-				3ECE71E213E24CA700AC26B2 /* ASIDataCompressor.h */,
-				3ECE71E313E24CA700AC26B2 /* ASIDataCompressor.m */,
-				3ECE71E413E24CA700AC26B2 /* ASIDataDecompressor.h */,
-				3ECE71E513E24CA700AC26B2 /* ASIDataDecompressor.m */,
-				3ECE71E613E24CA700AC26B2 /* ASIDownloadCache.h */,
-				3ECE71E713E24CA700AC26B2 /* ASIDownloadCache.m */,
-				3ECE71E813E24CA700AC26B2 /* ASIFormDataRequest.h */,
-				3ECE71E913E24CA700AC26B2 /* ASIFormDataRequest.m */,
-				3ECE71EA13E24CA700AC26B2 /* ASIHTTPRequest.h */,
-				3ECE71EB13E24CA700AC26B2 /* ASIHTTPRequest.m */,
-				3ECE71EC13E24CA700AC26B2 /* ASIHTTPRequestConfig.h */,
-				3ECE71ED13E24CA700AC26B2 /* ASIHTTPRequestDelegate.h */,
-				3ECE71EE13E24CA700AC26B2 /* ASIInputStream.h */,
-				3ECE71EF13E24CA700AC26B2 /* ASIInputStream.m */,
-				3ECE71F013E24CA700AC26B2 /* ASINetworkQueue.h */,
-				3ECE71F113E24CA700AC26B2 /* ASINetworkQueue.m */,
-				3ECE71F213E24CA700AC26B2 /* ASIProgressDelegate.h */,
+				3EAFC4871411F9D100A11D1B /* NewsViewController.h */,
+				3EAFC4881411F9D100A11D1B /* NewsViewController.m */,
+				3EAFC4891411F9D100A11D1B /* NewsViewController.xib */,
 			);
-			name = ASIHTTP;
+			name = News;
 			sourceTree = "<group>";
 		};
-		3ECE71D113E24C6400AC26B2 /* Reachability */ = {
+		3EAFC48C1411FA1500A11D1B /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				3ECE71DC13E24C9700AC26B2 /* Reachability.h */,
-				3ECE71DD13E24C9700AC26B2 /* Reachability.m */,
+				3EAFC4861411F8EE00A11D1B /* News */,
+				3EAFC48D1411FA1B00A11D1B /* Record */,
+				3EAFC4901411FA6000A11D1B /* Files */,
+				3EAFC48F1411FA5800A11D1B /* Social */,
+				3EAFC48E1411FA4F00A11D1B /* Settings */,
 			);
-			name = Reachability;
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		3EAFC48D1411FA1B00A11D1B /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				3EAFC4911411FB2800A11D1B /* RecordViewController.h */,
+				3EAFC4921411FB2800A11D1B /* RecordViewController.m */,
+				3EAFC4931411FB2800A11D1B /* RecordViewController.xib */,
+			);
+			name = Record;
+			sourceTree = "<group>";
+		};
+		3EAFC48E1411FA4F00A11D1B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3EAFC4961411FD0F00A11D1B /* SettingsViewController.h */,
+				3EAFC4971411FD0F00A11D1B /* SettingsViewController.m */,
+				3EAFC4981411FD0F00A11D1B /* SettingsViewController.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		3EAFC48F1411FA5800A11D1B /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				3EAFC49B1411FD2800A11D1B /* SocialViewController.h */,
+				3EAFC49C1411FD2800A11D1B /* SocialViewController.m */,
+				3EAFC49D1411FD2800A11D1B /* SocialViewController.xib */,
+			);
+			name = Social;
+			sourceTree = "<group>";
+		};
+		3EAFC4901411FA6000A11D1B /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E0559ED1411FF5D0067E518 /* FilesViewController.h */,
+				3E0559EE1411FF5D0067E518 /* FilesViewController.m */,
+				3E0559F5141200EF0067E518 /* FilesViewController.xib */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3ECE716913E24A7300AC26B2 /* EmotionRecognition */ = {
+		3E413F581405E22900E27FFD /* EmotionRecognition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3ECE71A813E24A7300AC26B2 /* Build configuration list for PBXNativeTarget "EmotionRecognition" */;
+			buildConfigurationList = 3E413F801405E22A00E27FFD /* Build configuration list for PBXNativeTarget "EmotionRecognition" */;
 			buildPhases = (
-				3ECE716613E24A7300AC26B2 /* Sources */,
-				3ECE716713E24A7300AC26B2 /* Frameworks */,
-				3ECE716813E24A7300AC26B2 /* Resources */,
+				3E413F551405E22900E27FFD /* Sources */,
+				3E413F561405E22900E27FFD /* Frameworks */,
+				3E413F571405E22900E27FFD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -328,167 +352,106 @@
 			);
 			name = EmotionRecognition;
 			productName = EmotionRecognition;
-			productReference = 3ECE716A13E24A7300AC26B2 /* EmotionRecognition.app */;
+			productReference = 3E413F591405E22900E27FFD /* EmotionRecognition.app */;
 			productType = "com.apple.product-type.application";
-		};
-		3ECE719313E24A7300AC26B2 /* EmotionRecognitionTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3ECE71AB13E24A7300AC26B2 /* Build configuration list for PBXNativeTarget "EmotionRecognitionTests" */;
-			buildPhases = (
-				3ECE718F13E24A7300AC26B2 /* Sources */,
-				3ECE719013E24A7300AC26B2 /* Frameworks */,
-				3ECE719113E24A7300AC26B2 /* Resources */,
-				3ECE719213E24A7300AC26B2 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3ECE719B13E24A7300AC26B2 /* PBXTargetDependency */,
-			);
-			name = EmotionRecognitionTests;
-			productName = EmotionRecognitionTests;
-			productReference = 3ECE719413E24A7300AC26B2 /* EmotionRecognitionTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3ECE716113E24A7200AC26B2 /* Project object */ = {
+		3E413F501405E22900E27FFD /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 3ECE716413E24A7200AC26B2 /* Build configuration list for PBXProject "EmotionRecognition" */;
+			buildConfigurationList = 3E413F531405E22900E27FFD /* Build configuration list for PBXProject "EmotionRecognition" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 3ECE715F13E24A7200AC26B2;
-			productRefGroup = 3ECE716B13E24A7300AC26B2 /* Products */;
+			mainGroup = 3E413F4E1405E22900E27FFD;
+			productRefGroup = 3E413F5A1405E22900E27FFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3ECE716913E24A7300AC26B2 /* EmotionRecognition */,
-				3ECE719313E24A7300AC26B2 /* EmotionRecognitionTests */,
+				3E413F581405E22900E27FFD /* EmotionRecognition */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3ECE716813E24A7300AC26B2 /* Resources */ = {
+		3E413F571405E22900E27FFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ECE717913E24A7300AC26B2 /* InfoPlist.strings in Resources */,
-				3ECE718213E24A7300AC26B2 /* MainWindow.xib in Resources */,
-				3ECE71C713E24BA300AC26B2 /* README in Resources */,
-				3ECE71D713E24C7800AC26B2 /* news.png in Resources */,
-				3ECE71D813E24C7800AC26B2 /* record.png in Resources */,
-				3ECE71D913E24C7800AC26B2 /* files.png in Resources */,
-				3ECE71DA13E24C7800AC26B2 /* social.png in Resources */,
-				3ECE71DB13E24C7800AC26B2 /* settings.png in Resources */,
-				3ECE720813E24CD400AC26B2 /* FilesRootViewController.xib in Resources */,
-				3ECE720A13E24CD400AC26B2 /* AudioFileDetailViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3ECE719113E24A7300AC26B2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3ECE71A113E24A7300AC26B2 /* InfoPlist.strings in Resources */,
-				3ECE71A313E24A7300AC26B2 /* EmotionRecognitionTests.h in Resources */,
+				3E413F681405E22900E27FFD /* InfoPlist.strings in Resources */,
+				3E413F711405E22A00E27FFD /* MainWindow.xib in Resources */,
+				3EAFC4481411F44300A11D1B /* README in Resources */,
+				3EAFC47A1411F7C900A11D1B /* AudioFileDetailViewController.xib in Resources */,
+				3EAFC4811411F86300A11D1B /* files.png in Resources */,
+				3EAFC4821411F86300A11D1B /* news.png in Resources */,
+				3EAFC4831411F86300A11D1B /* record.png in Resources */,
+				3EAFC4841411F86300A11D1B /* settings.png in Resources */,
+				3EAFC4851411F86300A11D1B /* social.png in Resources */,
+				3EAFC48B1411F9D100A11D1B /* NewsViewController.xib in Resources */,
+				3EAFC4951411FB2800A11D1B /* RecordViewController.xib in Resources */,
+				3EAFC49A1411FD0F00A11D1B /* SettingsViewController.xib in Resources */,
+				3EAFC49F1411FD2800A11D1B /* SocialViewController.xib in Resources */,
+				3E0559F6141200EF0067E518 /* FilesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3ECE719213E24A7300AC26B2 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		3ECE716613E24A7300AC26B2 /* Sources */ = {
+		3E413F551405E22900E27FFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ECE717B13E24A7300AC26B2 /* main.m in Sources */,
-				3ECE717F13E24A7300AC26B2 /* EmotionRecognitionAppDelegate.m in Sources */,
-				3ECE71DE13E24C9700AC26B2 /* Reachability.m in Sources */,
-				3ECE71F313E24CA700AC26B2 /* ASIAuthenticationDialog.m in Sources */,
-				3ECE71F413E24CA700AC26B2 /* ASIDataCompressor.m in Sources */,
-				3ECE71F513E24CA700AC26B2 /* ASIDataDecompressor.m in Sources */,
-				3ECE71F613E24CA700AC26B2 /* ASIDownloadCache.m in Sources */,
-				3ECE71F713E24CA700AC26B2 /* ASIFormDataRequest.m in Sources */,
-				3ECE71F813E24CA700AC26B2 /* ASIHTTPRequest.m in Sources */,
-				3ECE71F913E24CA700AC26B2 /* ASIInputStream.m in Sources */,
-				3ECE71FA13E24CA700AC26B2 /* ASINetworkQueue.m in Sources */,
-				3ECE71FF13E24CBD00AC26B2 /* OCPromptView.m in Sources */,
-				3ECE720013E24CBD00AC26B2 /* OCPasswordPromptView.m in Sources */,
-				3ECE720713E24CD400AC26B2 /* FilesRootViewController.m in Sources */,
-				3ECE720913E24CD400AC26B2 /* AudioFileDetailViewController.m in Sources */,
-				3ECE720D13E24CE400AC26B2 /* AudioFile.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3ECE718F13E24A7300AC26B2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3ECE71A513E24A7300AC26B2 /* EmotionRecognitionTests.m in Sources */,
+				3E413F6A1405E22A00E27FFD /* main.m in Sources */,
+				3E413F6E1405E22A00E27FFD /* EmotionRecognitionAppDelegate.m in Sources */,
+				3EAFC4621411F6D000A11D1B /* ASIAuthenticationDialog.m in Sources */,
+				3EAFC4631411F6D000A11D1B /* ASIDataCompressor.m in Sources */,
+				3EAFC4641411F6D000A11D1B /* ASIDataDecompressor.m in Sources */,
+				3EAFC4651411F6D000A11D1B /* ASIDownloadCache.m in Sources */,
+				3EAFC4661411F6D000A11D1B /* ASIFormDataRequest.m in Sources */,
+				3EAFC4671411F6D000A11D1B /* ASIHTTPRequest.m in Sources */,
+				3EAFC4681411F6D000A11D1B /* ASIInputStream.m in Sources */,
+				3EAFC4691411F6D000A11D1B /* ASINetworkQueue.m in Sources */,
+				3EAFC46A1411F6D000A11D1B /* Reachability.m in Sources */,
+				3EAFC4701411F73300A11D1B /* OCPasswordPromptView.m in Sources */,
+				3EAFC4711411F73300A11D1B /* OCPromptView.m in Sources */,
+				3EAFC4781411F7C900A11D1B /* AudioFile.m in Sources */,
+				3EAFC4791411F7C900A11D1B /* AudioFileDetailViewController.m in Sources */,
+				3EAFC48A1411F9D100A11D1B /* NewsViewController.m in Sources */,
+				3EAFC4941411FB2800A11D1B /* RecordViewController.m in Sources */,
+				3EAFC4991411FD0F00A11D1B /* SettingsViewController.m in Sources */,
+				3EAFC49E1411FD2800A11D1B /* SocialViewController.m in Sources */,
+				3E0559EF1411FF5D0067E518 /* FilesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		3ECE719B13E24A7300AC26B2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3ECE716913E24A7300AC26B2 /* EmotionRecognition */;
-			targetProxy = 3ECE719A13E24A7300AC26B2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		3ECE717713E24A7300AC26B2 /* InfoPlist.strings */ = {
+		3E413F661405E22900E27FFD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3ECE717813E24A7300AC26B2 /* en */,
+				3E413F671405E22900E27FFD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		3ECE718013E24A7300AC26B2 /* MainWindow.xib */ = {
+		3E413F6F1405E22A00E27FFD /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3ECE718113E24A7300AC26B2 /* en */,
+				3E413F701405E22A00E27FFD /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		3ECE719F13E24A7300AC26B2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3ECE71A013E24A7300AC26B2 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3ECE71A613E24A7300AC26B2 /* Debug */ = {
+		3E413F7E1405E22A00E27FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -512,7 +475,7 @@
 			};
 			name = Debug;
 		};
-		3ECE71A713E24A7300AC26B2 /* Release */ = {
+		3E413F7F1405E22A00E27FFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -531,13 +494,9 @@
 			};
 			name = Release;
 		};
-		3ECE71A913E24A7300AC26B2 /* Debug */ = {
+		3E413F811405E22A00E27FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/EmotionRecognition\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EmotionRecognition/EmotionRecognition-Prefix.pch";
 				INFOPLIST_FILE = "EmotionRecognition/EmotionRecognition-Info.plist";
@@ -546,84 +505,39 @@
 			};
 			name = Debug;
 		};
-		3ECE71AA13E24A7300AC26B2 /* Release */ = {
+		3E413F821405E22A00E27FFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/EmotionRecognition\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EmotionRecognition/EmotionRecognition-Prefix.pch";
 				INFOPLIST_FILE = "EmotionRecognition/EmotionRecognition-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		3ECE71AC13E24A7300AC26B2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EmotionRecognition.app/EmotionRecognition";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EmotionRecognition/EmotionRecognition-Prefix.pch";
-				INFOPLIST_FILE = "EmotionRecognitionTests/EmotionRecognitionTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		3ECE71AD13E24A7300AC26B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EmotionRecognition.app/EmotionRecognition";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EmotionRecognition/EmotionRecognition-Prefix.pch";
-				INFOPLIST_FILE = "EmotionRecognitionTests/EmotionRecognitionTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3ECE716413E24A7200AC26B2 /* Build configuration list for PBXProject "EmotionRecognition" */ = {
+		3E413F531405E22900E27FFD /* Build configuration list for PBXProject "EmotionRecognition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3ECE71A613E24A7300AC26B2 /* Debug */,
-				3ECE71A713E24A7300AC26B2 /* Release */,
+				3E413F7E1405E22A00E27FFD /* Debug */,
+				3E413F7F1405E22A00E27FFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3ECE71A813E24A7300AC26B2 /* Build configuration list for PBXNativeTarget "EmotionRecognition" */ = {
+		3E413F801405E22A00E27FFD /* Build configuration list for PBXNativeTarget "EmotionRecognition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3ECE71A913E24A7300AC26B2 /* Debug */,
-				3ECE71AA13E24A7300AC26B2 /* Release */,
+				3E413F811405E22A00E27FFD /* Debug */,
+				3E413F821405E22A00E27FFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		3ECE71AB13E24A7300AC26B2 /* Build configuration list for PBXNativeTarget "EmotionRecognitionTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3ECE71AC13E24A7300AC26B2 /* Debug */,
-				3ECE71AD13E24A7300AC26B2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3ECE716113E24A7200AC26B2 /* Project object */;
+	rootObject = 3E413F501405E22900E27FFD /* Project object */;
 }

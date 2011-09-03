@@ -4,9 +4,14 @@ UPDATE LOG
 
 [1.0.4 -> 1.0.5]
 -Updated UI to tab-based views
-    -Record tab and Files tab have been implemented; others have not
+-RECORD tab and FILES tab have been implemented; others have not
+-Wrong reference bug has been corrected; app should now run and display views
+
 
 [1.0.3 -> 1.0.4]
 -AudioFileDetailView has been modified to add greater functionality regarding audio files and displays emotion analysis results
--System updated to refresh every 15 seconds to check for alerts and analysis results
+-System updated to refresh every 1 second to check for alerts and analysis results
 -Reorganized code to reduce lines of code and increase efficiency
+-Can analyze audio files manually
+-Can delete audio files
+-Analysis server is now online with redundancy, so alerts will popup after audio file is submitted for analysis

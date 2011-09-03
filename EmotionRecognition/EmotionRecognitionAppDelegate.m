@@ -2,7 +2,7 @@
 //  EmotionRecognitionAppDelegate.m
 //  EmotionRecognition
 //
-//  Created by Akash Krishnan on 7/28/11.
+//  Created by Akash Krishnan on 8/24/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 

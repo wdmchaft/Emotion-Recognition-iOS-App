@@ -1,6 +1,6 @@
 //
 //  AudioFileDetailViewController.m
-//  EmotionRecognition
+//  AudioRecordingTest3
 //
 //  Created by Akash Krishnan on 7/16/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
@@ -8,6 +8,7 @@
 
 #import "AudioFileDetailViewController.h"
 #import "AudioFile.h"
+#import "ASIFormDataRequest.h"
 
 @implementation AudioFileDetailViewController
 
@@ -26,17 +27,19 @@
 @synthesize playAudioFileButton;
 @synthesize deleteAudioFileButton;
 
-@synthesize rvc;
+@synthesize username;
+@synthesize encPassword;
 
 -(IBAction)analyzeAudioFileButtonPressed:(id)sender
 {
-    [AudioFile analyze:af.fileURL username:rvc.username password:rvc.encPassword];
+    [AudioFile analyze:af.fileURL username:username password:encPassword];
     [analyzeAudioFileButton setEnabled:false];
+    [self.navigationController popToRootViewControllerAnimated:true];
 }
 
 -(IBAction)submitCorrectionButtonPressed:(id)sender
 {
-    
+    [submitCorrectionButton setEnabled:false];
 }
 
 -(IBAction)playAudioFileButtonPressed:(id)sender
@@ -49,7 +52,11 @@
 
 -(IBAction)deleteAudioFileButtonPressed:(id)sender
 {
-    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://aakay.net/EmotionRecognition/iOS/?r=df&u=%@&p=%@&f=%@", username, encPassword, af.fid]];
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    [request setPostFormat:ASIMultipartFormDataPostFormat];
+    [request startAsynchronous];
+    [self.navigationController popToRootViewControllerAnimated:true];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -100,6 +107,13 @@
     fearfulLabel.text = [NSString stringWithFormat:@"Fearful: %@", af.fearful];
     happyLabel.text = [NSString stringWithFormat:@"Happy: %@", af.happy];
     sadLabel.text = [NSString stringWithFormat:@"Sad: %@", af.sad];
+    
+    if([af.fileURL absoluteString] == nil || [[af.fileURL absoluteString] isEqualToString:@""])
+    {
+        [analyzeAudioFileButton setEnabled:false];
+        [submitCorrectionButton setEnabled:false];
+        [playAudioFileButton setEnabled:false];
+    }
 }
 
 - (void)viewDidUnload

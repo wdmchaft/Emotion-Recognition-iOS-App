@@ -13,7 +13,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3ECE716913E24A7300AC26B2"
+               BlueprintIdentifier = "3E413F581405E22900E27FFD"
                BuildableName = "EmotionRecognition.app"
                BlueprintName = "EmotionRecognition"
                ReferencedContainer = "container:EmotionRecognition.xcodeproj">
@@ -27,16 +27,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3ECE719313E24A7300AC26B2"
-               BuildableName = "EmotionRecognitionTests.octest"
-               BlueprintName = "EmotionRecognitionTests"
-               ReferencedContainer = "container:EmotionRecognition.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -48,7 +38,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3ECE716913E24A7300AC26B2"
+            BlueprintIdentifier = "3E413F581405E22900E27FFD"
             BuildableName = "EmotionRecognition.app"
             BlueprintName = "EmotionRecognition"
             ReferencedContainer = "container:EmotionRecognition.xcodeproj">
@@ -65,7 +55,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3ECE716913E24A7300AC26B2"
+            BlueprintIdentifier = "3E413F581405E22900E27FFD"
             BuildableName = "EmotionRecognition.app"
             BlueprintName = "EmotionRecognition"
             ReferencedContainer = "container:EmotionRecognition.xcodeproj">

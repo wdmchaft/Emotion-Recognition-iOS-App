@@ -1,6 +1,6 @@
 //
 //  AudioFileDetailViewController.h
-//  EmotionRecognition
+//  AudioRecordingTest3
 //
 //  Created by Akash Krishnan on 7/16/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <CoreAudio/CoreAudioTypes.h>
 #import "AudioFile.h"
-#import "FilesRootViewController.h"
+#import "FilesViewController.h"
 
 @interface AudioFileDetailViewController : UIViewController <UIAlertViewDelegate>
 {
@@ -29,7 +29,8 @@
     IBOutlet UIButton *playAudioFileButton;
     IBOutlet UIButton *deleteAudioFileButton;
     
-    FilesRootViewController *rvc;
+    NSString *username;
+    NSString *encPassword;
 }
 
 @property (nonatomic, retain) UILabel *filenameLabel;
@@ -47,7 +48,8 @@
 @property (nonatomic, retain) UIButton *playAudioFileButton;
 @property (nonatomic, retain) UIButton *deleteAudioFileButton;
 
-@property (nonatomic, retain) FilesRootViewController *rvc;
+@property (nonatomic, retain) NSString *username;
+@property (nonatomic, retain) NSString *encPassword;
 
 -(IBAction)analyzeAudioFileButtonPressed:(id)sender;
 -(IBAction)submitCorrectionButtonPressed:(id)sender;

@@ -1,5 +1,5 @@
 //
-//  FilesRootViewController.h
+//  FilesViewController.h
 //  EmotionRecognition
 //
 //  Created by Akash Krishnan on 7/16/11.
@@ -10,10 +10,10 @@
 #import <AVFoundation/AVFoundation.h>
 #import <CoreAudio/CoreAudioTypes.h>
 
-@interface FilesRootViewController : UITableViewController <UIAlertViewDelegate, AVAudioRecorderDelegate>
+@interface FilesViewController : UITableViewController <UIAlertViewDelegate, AVAudioRecorderDelegate>
 {
-    IBOutlet UINavigationBar *recordNavBar;
     IBOutlet UIButton *recordAudioButton;
+    IBOutlet UIViewController *recordNavigationController;
     
     UIBarButtonItem *recordAudioActivityButton;
     UIActivityIndicatorView *recordAudioActivitySpinner;
@@ -31,8 +31,8 @@
     NSString *encPassword;
 }
 
-@property (nonatomic, retain) UINavigationBar *recordNavBar;
 @property (nonatomic, retain) UIButton *recordAudioButton;
+@property (nonatomic, retain) UIViewController *recordNavigationController;
 @property (nonatomic, retain) NSString *username;
 @property (nonatomic, retain) NSString *nickname;
 @property (nonatomic, retain) NSString *encPassword;
